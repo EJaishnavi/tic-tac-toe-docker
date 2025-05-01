@@ -14,11 +14,6 @@ agent any
       }
    }
 }
- stage("deploy to container")
-   {
-     steps{
-      sh 'docker run -d --name mygame -p 8080:8081 jaishnavi08/gameimage:v1'
-     }
-   }
+ 
  }
 }
