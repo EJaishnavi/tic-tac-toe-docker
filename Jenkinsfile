@@ -4,7 +4,7 @@ agent any
    stage("docker build & push")
   {
     steps{
-      scripts{
+      script{
         withDockerRegistry(credentialsId: 'docker-pswd') {
         sh 'docker build -t toeimage .'
         sh "docker tag toeimage jaishnavi08/gameimage:v1"
