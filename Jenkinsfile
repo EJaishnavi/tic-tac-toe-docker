@@ -5,7 +5,7 @@ agent any
   {
     steps{
       script{
-        withDockerRegistry(credentialsId: 'docker-pswd') {
+        
         sh 'docker build -t toeimage .'
        
 }
@@ -15,4 +15,4 @@ agent any
 }
  
  }
-}
+
