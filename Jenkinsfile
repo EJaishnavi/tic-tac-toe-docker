@@ -27,7 +27,7 @@ agent any
   stage("deploy")
   {
    steps{
-   sh 'docker run -d --name mygame -p 8081:80 jaishnavi08/gameimage:v1'
+   sh 'docker run -d --name container1 -p 8081:80 jaishnavi08/gameimage:v1'
    }
   }
   }
